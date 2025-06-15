@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TreeOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading screen -->
+  <div id="loadingScreen">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main OS -->
+  <div id="homeScreen" class="hidden">
+    <h1 id="welcomeText">Welcome to TreeOS 🌳</h1>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+      <button class="app-btn" data-app="treeStore">TreeStore</button>
+      <button class="app-btn" data-app="browser">FakeBrowser</button>
+      <button class="app-btn" data-app="settings">Settings</button>
+      <button class="app-btn" data-app="notes">Notes</button>
+    </div>
+
+    <!-- TreeStore -->
+    <div id="treeStore" class="app hidden">
+      <div class="app-header">
+        🌲 TreeStore <button class="close-btn">X</button>
+      </div>
+      <ul>
+        <li>🌐 FakeBrowser</li>
+        <li>📝 Notes App</li>
+        <li>🎮 Coming Soon...</li>
+      </ul>
+    </div>
+
+    <!-- Browser -->
+    <div id="browser" class="app hidden">
+      <div class="app-header">
+        🌐 FakeBrowser <button class="close-btn">X</button>
+      </div>
+      <p>Welcome to the fake internet. Try visiting: TreeTube, TreeMail, TreeChat...</p>
+    </div>
+
+    <!-- Settings -->
+    <div id="settings" class="app hidden">
+      <div class="app-header">
+        ⚙️ Settings <button class="close-btn">X</button>
+      </div>
+      <p>Appearance: <button>Dark 🌙</button> <button>Light ☀️</button></p>
+      <p>Sound: <button>🔈 On</button> <button>🔇 Off</button></p>
+    </div>
+
+    <!-- Notes -->
+    <div id="notes" class="app hidden">
+      <div class="app-header">
+        📝 Notes <button class="close-btn">X</button>
+      </div>
+      <textarea placeholder="Type your thoughts here..."></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
